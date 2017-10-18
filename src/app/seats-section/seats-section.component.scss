@@ -1,0 +1,21 @@
+.section-container {
+    width: 200px;
+
+    .seat {
+        cursor: default;
+        circle {
+            fill: #ffffff;
+            stroke: #94A3A9;
+            stroke-width: 2;
+        }
+        text {
+            font-size: 12px;
+            font-family: sans-serif;
+            fill: #94A3A9;
+        }
+        &.selected {
+            circle { stroke: #00abfb }
+            text { fill: #00abfb }
+        }
+    }
+}

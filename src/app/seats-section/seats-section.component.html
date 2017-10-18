@@ -1,0 +1,10 @@
+<div class="section-container">
+  <svg 
+      class="seat" height="40" width="40" 
+      *ngFor="let seat of seats"
+      [ngClass]="{ 'selected': seat.selected }"
+      (click)="handleSeatSelection(seat)">
+    <circle cx="50%" cy="50%" r="16" />
+    <text x="50%" y="50%" text-anchor="middle" dy=".3em">{{ seat.title }}</text>
+  </svg>
+</div>
